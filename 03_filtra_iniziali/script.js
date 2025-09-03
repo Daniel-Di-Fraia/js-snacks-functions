@@ -5,10 +5,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 function onlyFirstItemLetter (array,letter){
+    //creiamo un nuovo array
     newArray = [];
     for (let i = 0; i < array.length; i++){
         let element = array[i];
         let iniziale = element.charAt(0);
+        //condizione per verificare se la lettera inserita è la stessa degli elementi dell'array
         if(letter === iniziale){
             newArray.push(element);
         } 
