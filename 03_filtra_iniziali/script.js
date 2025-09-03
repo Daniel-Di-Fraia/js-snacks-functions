@@ -4,9 +4,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function onlyFirstItemLetter (array,letter){
+    newArray = [];
+    for (let i = 0; i < array.length; i++){
+        let element = array[i];
+        let iniziale = element.charAt(0);
+        if(letter === iniziale){
+            newArray.push(element);
+        } 
+    }
+    return newArray;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(onlyFirstItemLetter(names,"A"));
 
 
 
