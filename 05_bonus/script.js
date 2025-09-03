@@ -23,7 +23,7 @@ function salutoHour (nome){
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(salutoHour("name"));
+console.log(salutoHour(name));
 
 
 
